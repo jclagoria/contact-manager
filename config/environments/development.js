@@ -8,7 +8,7 @@ module.exports = {
     hostname: '127.0.0.1',
     baseUrl: 'http://localhost:3000',
     mongodb: {
-        uri: 'mongo://localhost/cm_dev_db'
+        uri: 'mongo://localhost:27017/cm_dev_db'
     },
     app : {
         name: 'Contact Manager'
