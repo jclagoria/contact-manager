@@ -3,8 +3,8 @@
  */
 'use strict';
 
-const mongoose = requires('mongoose');
-const congif = requires('./index');
+const mongoose = require('mongoose');
+const congif = require('./index');
 
 module.exports.init = initMongoose;
 

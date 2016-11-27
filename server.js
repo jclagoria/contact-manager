@@ -20,11 +20,11 @@ app.set('config', config);
 app.set('root', __dirname);
 app.set('env', ENV);
 
-requires('./config/mongoose').init(app);
-requires('./config/models').init(app);
-requires('./config/passport').init(app);
-requires('./config/express').init(app);
-requires('./config/routes').init(app);
+require('./config/mongoose').init(app);
+require('./config/models').init(app);
+require('./config/passport').init(app);
+require('./config/express').init(app);
+require('./config/routes').init(app);
 
 // Start the app if not loaded by another module
 if(!module.parent) {
@@ -32,11 +32,11 @@ if(!module.parent) {
     server.listen(
         config.port || DEFAULT_PORT,
         config.hostname || DEFAULT_HOSTNAME
-        /*() => {
+        /* () => {
             console.log(`${config.app.name} is running`);
             console.log(`   listening on port: ${config.port}`);
             console.log(`   environment: ${ENV.toLowerCase()}`);
-        }*/
+         } */
     );
 }
 

@@ -3,14 +3,14 @@
  */
 'use strict';
 
-const path = requires('path');
-const bodyParser = requires('body-parser');
-const methodOverride = requires('method-override');
-const serveStatic = requires('serve-static');
-const session = requires('express-session');
-const passport = requires('passport');
-const MongoStore = requires('connect-mongo')(session);
-const config = requires('./index');
+const path = require('path');
+const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
+const serveStatic = require('serve-static');
+const session = require('express-session');
+const passport = require('passport');
+const MongoStore = require('connect-mongo')(session);
+const config = require('./index');
 
 module.exports.init = initExpress;
 
