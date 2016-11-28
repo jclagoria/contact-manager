@@ -25,7 +25,7 @@ let apiUrl;
 
 describe('Contacts endpoints test', function () {
     before((done) => {
-       /* app = require('../../server');
+        app = require('../../server');
         config = app.get('config');
         baseUrl = config.baseUrl;
         apiUrl = `${baseUrl}/api`;
@@ -58,11 +58,11 @@ describe('Contacts endpoints test', function () {
             });
         });
 
-        appServer.listen(config.port);*/
+        appServer.listen(config.port);
     });
 
     after(function(done) {
-       /* appServer.on('close', () => {
+        appServer.on('close', () => {
             setTimeout(() => done(), 1000);
         });
 
@@ -72,15 +72,15 @@ describe('Contacts endpoints test', function () {
             mongoose.connection.close(() => {
                 appServer.close();
             });
-        });*/
+        });
     });
 
     afterEach((done) => {
-       /* Contact.remove({}, (err) => {
+        Contact.remove({}, (err) => {
             if (err) throw err;
 
             done();
-        });*/
+        });
     });
 
     describe('Save contact', () => {
@@ -104,7 +104,7 @@ describe('Contacts endpoints test', function () {
         });
     });
 
-   /* describe('Get contacts', () => {
+    describe('Get contacts', () => {
         before((done) => {
            Contact.collection.insert([
                { email: 'jane.doe@test.com'},
@@ -238,5 +238,5 @@ describe('Contacts endpoints test', function () {
                done();
            });
         });
-    });*/
+    });
 });
